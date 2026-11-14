@@ -34,26 +34,18 @@ export default function Home() {
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden">
-          <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-20 pt-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:pt-24">
+          <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-6 pt-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:pt-24">
             <div>
               <p className="inline-flex items-center rounded-full bg-[var(--accent-soft)] px-3 py-1 text-sm font-semibold text-[var(--accent)]">
                 {HERO.eyebrow}
               </p>
               <h1 className="mt-6 text-4xl font-bold leading-[1.05] sm:text-5xl lg:text-6xl">{HERO.headline}</h1>
               <p className="mt-6 max-w-xl text-lg text-[var(--text-muted)]">{HERO.sub}</p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a href="#get-the-app" className="inline-flex min-h-12 items-center rounded-full bg-ink px-7 font-semibold text-white hover:opacity-90">
-                  {HERO.primaryCta}
-                </a>
-                <a href="#how-it-works" className="inline-flex min-h-12 items-center rounded-full border border-[var(--border)] px-7 font-semibold hover:bg-[var(--surface-muted)]">
-                  {HERO.secondaryCta}
-                </a>
-              </div>
             </div>
 
           </div>
 
-          <div className="mx-auto mt-20 max-w-6xl">
+          <div className="mx-auto mt-4 max-w-6xl">
             <h2 className="mb-8 text-center text-3xl font-bold sm:text-4xl">See your lesson come to life</h2>
             <ConceptCarousel slides={CONCEPT_SLIDES} />
           </div>
