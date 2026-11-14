@@ -37,11 +37,6 @@ export const POSITIONING = {
   ],
 };
 
-/* What is covered today, stated plainly. */
-export const COVERAGE = {
-  line: "Lessons for Grade 10 up to Grade 12, currently covering Life Sciences, Mathematics and Physical Sciences. More subjects are coming.",
-};
-
 /* The AI tutor promise, in three steps. Highlighted on the home page. */
 export const TUTOR = {
   title: "Didn't get it the first time? Ask again.",

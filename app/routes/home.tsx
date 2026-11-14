@@ -8,7 +8,7 @@ import HeartScene from "../components/lessons/HeartScene";
 import GradientScene from "../components/lessons/GradientScene";
 import StoreButtons from "../components/StoreButtons";
 import { pageMeta } from "../lib/seo";
-import { COVERAGE, FAQS, FEATURES, HERO, HOW_IT_WORKS, POSITIONING, TUTOR } from "../content";
+import { FAQS, FEATURES, HERO, HOW_IT_WORKS, POSITIONING, TUTOR } from "../content";
 import { TAGLINE } from "../constants";
 
 export function meta(_: Route.MetaArgs) {
@@ -54,9 +54,6 @@ export default function Home() {
         {/* Coverage and the AI tutor promise, highlighted */}
         <section className="border-t border-[var(--border)] bg-[var(--surface)] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <p className="max-w-3xl text-xl font-semibold text-[var(--accent)]">
-              {COVERAGE.line}
-            </p>
             <div className="mt-8 rounded-[2rem] bg-ink p-8 text-white sm:p-12">
               <h2 className="text-3xl font-bold sm:text-4xl">{TUTOR.title}</h2>
               <p className="mt-4 max-w-2xl text-lg text-white/75">{TUTOR.intro}</p>
