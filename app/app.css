@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Qwilo brand (CLAUDE.md §12). Ink on near-white with one teal accent; orange
+   and amber are reserved for the understanding gauge and warnings. */
+@theme {
+  --color-ink: #111111;
+  --color-paper: #fafafa;
+  --color-teal: #0f766e;
+  --color-teal-on-dark: #5eead4;
+  --color-teal-light: #f0fdfa;
+  --color-teal-soft: #ccfbf1;
+  --color-orange: #9a3412;
+  --color-orange-soft: #ffedd5;
+  --color-amber: #b45309;
+
+  --font-heading: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  /* Light only. The site is not offered in a dark theme. */
+  color-scheme: light;
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --surface-muted: #f4f4f5;
+  --border: #e4e4e7;
+  --text: #111111;
+  --text-muted: #52525b;
+  --accent: #0f766e;
+  --accent-soft: #f0fdfa;
+  --accent-strong: #ccfbf1;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+  }
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  /* Respect people who ask their device to limit motion. */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+}
