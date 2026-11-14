@@ -8,7 +8,7 @@ import HeartScene from "../components/lessons/HeartScene";
 import GradientScene from "../components/lessons/GradientScene";
 import StoreButtons from "../components/StoreButtons";
 import { pageMeta } from "../lib/seo";
-import { FAQS, FEATURES, HERO, HOW_IT_WORKS, POSITIONING } from "../content";
+import { COVERAGE, FAQS, FEATURES, HERO, HOW_IT_WORKS, POSITIONING, TUTOR } from "../content";
 import { TAGLINE } from "../constants";
 
 export function meta(_: Route.MetaArgs) {
@@ -56,6 +56,28 @@ export default function Home() {
           <div className="mx-auto mt-20 max-w-6xl">
             <h2 className="mb-8 text-center text-3xl font-bold sm:text-4xl">See your lesson come to life</h2>
             <ConceptCarousel slides={CONCEPT_SLIDES} />
+          </div>
+        </section>
+
+        {/* Coverage and the AI tutor promise, highlighted */}
+        <section className="border-t border-[var(--border)] bg-[var(--surface)] py-20">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <p className="max-w-3xl text-xl font-semibold text-[var(--accent)]">
+              {COVERAGE.line}
+            </p>
+            <div className="mt-8 rounded-[2rem] bg-ink p-8 text-white sm:p-12">
+              <h2 className="text-3xl font-bold sm:text-4xl">{TUTOR.title}</h2>
+              <p className="mt-4 max-w-2xl text-lg text-white/75">{TUTOR.intro}</p>
+              <ol className="mt-10 grid gap-5 md:grid-cols-3">
+                {TUTOR.steps.map((step, i) => (
+                  <li key={step.title} className="rounded-2xl bg-white/10 p-6">
+                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white font-heading font-bold text-ink">{i + 1}</span>
+                    <h3 className="mt-5 text-xl font-bold">{step.title}</h3>
+                    <p className="mt-2 text-white/75">{step.body}</p>
+                  </li>
+                ))}
+              </ol>
+            </div>
           </div>
         </section>
 

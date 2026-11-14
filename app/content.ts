@@ -37,6 +37,31 @@ export const POSITIONING = {
   ],
 };
 
+/* What is covered today, stated plainly. */
+export const COVERAGE = {
+  line: "Lessons for Grade 10 up to Grade 12, currently covering Life Sciences, Mathematics and Physical Sciences. More subjects are coming.",
+};
+
+/* The AI tutor promise, in three steps. Highlighted on the home page. */
+export const TUTOR = {
+  title: "Didn't get it the first time? Ask again.",
+  intro: "The AI tutor keeps breaking a concept down until it makes sense, then you check what you know with a quiz.",
+  steps: [
+    {
+      title: "Ask the AI tutor",
+      body: "Ask about any concept in the lesson you are on. The tutor explains it again, step by step.",
+    },
+    {
+      title: "Keep going until it clicks",
+      body: "Ask again from a different angle, as many times as you need, until you understand the idea.",
+    },
+    {
+      title: "Test yourself",
+      body: "When you feel ready, take a quiz in the app to see what you know.",
+    },
+  ],
+};
+
 export const STORE_NOTE = "Coming soon to the App Store and Google Play. Free to download.";
 
 export const HOW_IT_WORKS = [
