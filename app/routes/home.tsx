@@ -45,7 +45,7 @@ export default function Home() {
 
           </div>
 
-          <div className="mx-auto mt-4 max-w-6xl">
+          <div className="mx-auto mt-4 max-w-6xl px-4 sm:px-6 lg:px-8">
             <h2 className="mb-8 text-center text-3xl font-bold sm:text-4xl">See your lesson come to life</h2>
             <ConceptCarousel slides={CONCEPT_SLIDES} />
           </div>

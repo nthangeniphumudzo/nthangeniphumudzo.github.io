@@ -47,10 +47,10 @@ export default function ConceptCarousel({ slides }: { slides: ConceptSlide[] }) 
         ref={listRef}
         onScroll={handleScroll}
         aria-label="Lesson previews"
-        className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-[11vw] pb-4 md:mx-0 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:px-0"
+        className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-[10%] pb-4 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:px-0"
       >
         {slides.map(s => (
-          <li key={s.id} className="w-[78vw] flex-none snap-center md:w-auto">
+          <li key={s.id} className="w-full flex-none snap-center md:w-auto">
             <div className="flex h-[26rem] flex-col rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-5">
               {s.children}
             </div>
