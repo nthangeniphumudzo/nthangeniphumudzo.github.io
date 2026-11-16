@@ -1,26 +1,28 @@
 /* The hyperbola lift scene ("Hyperbola lift", y = 1/(x − 2) + 1), generated from the Grade 11
- * lesson "Quadratic and hyperbola transformations" in the QWILO app, so the drawing is the same. */
+ * lesson "Quadratic and hyperbola transformations" in the QWILO app (with the labelled axes), so the drawing is the same. */
 export const HYPERBOLA_LIFT = {
  "title": "Hyperbola lift",
  "label": "y = 1/(x − 2) + 1",
  "items": [
   {
-   "type": "line",
+   "type": "arrow",
    "x1": 20,
    "y1": 110,
-   "x2": 290,
+   "x2": 288,
    "y2": 110,
-   "stroke": "line",
-   "width": 1.5
+   "colour": "line",
+   "width": 2,
+   "head": 7
   },
   {
-   "type": "line",
+   "type": "arrow",
    "x1": 150,
-   "y1": 20,
+   "y1": 190,
    "x2": 150,
-   "y2": 190,
-   "stroke": "line",
-   "width": 1.5
+   "y2": 20,
+   "colour": "line",
+   "width": 2,
+   "head": 7
   },
   {
    "type": "path",
@@ -83,6 +85,26 @@ export const HYPERBOLA_LIFT = {
    "bold": true,
    "w": 280,
    "align": "center"
+  },
+  {
+   "type": "text",
+   "x": 244,
+   "y": 93,
+   "text": "x-axis",
+   "bold": true,
+   "size": 11,
+   "w": 44,
+   "align": "left"
+  },
+  {
+   "type": "text",
+   "x": 157,
+   "y": 14,
+   "text": "y-axis",
+   "bold": true,
+   "size": 11,
+   "w": 44,
+   "align": "left"
   }
  ]
 } as const;

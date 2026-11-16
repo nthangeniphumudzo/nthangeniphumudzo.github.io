@@ -33,6 +33,22 @@ function ItemView({ item }: { item: Item }) {
       />
     );
   }
+  if (item.type === "arrow") {
+    const x1 = Number(a.x1), y1 = Number(a.y1), x2 = Number(a.x2), y2 = Number(a.y2);
+    const head = Number(a.head ?? 8);
+    const len = Math.hypot(x2 - x1, y2 - y1) || 1;
+    const ux = (x2 - x1) / len, uy = (y2 - y1) / len;
+    const px = -uy, py = ux;
+    // Arrowhead: a small triangle whose tip sits on the end of the line, as the app draws it.
+    const bx = x2 - ux * head, by = y2 - uy * head;
+    const colour = colourOf(a.colour, "#334155");
+    return (
+      <g>
+        <line x1={x1} y1={y1} x2={bx} y2={by} stroke={colour} strokeWidth={Number(a.width ?? 2)} strokeLinecap="round" />
+        <path d={`M${x2} ${y2} L${bx + px * head * 0.5} ${by + py * head * 0.5} L${bx - px * head * 0.5} ${by - py * head * 0.5} Z`} fill={colour} />
+      </g>
+    );
+  }
   if (item.type === "path") {
     return (
       <path
