@@ -5,6 +5,7 @@ import ScreenGallery from "../components/ScreenGallery";
 import SeparationLesson from "../components/lessons/SeparationLesson";
 import ConceptCarousel, { type ConceptSlide } from "../components/lessons/ConceptCarousel";
 import HeartScene from "../components/lessons/HeartScene";
+import WaterCycleScene from "../components/lessons/WaterCycleScene";
 import GradientScene from "../components/lessons/GradientScene";
 import StoreButtons from "../components/StoreButtons";
 import { pageMeta } from "../lib/seo";
@@ -24,6 +25,7 @@ export function meta(_: Route.MetaArgs) {
 const CONCEPT_SLIDES: ConceptSlide[] = [
   { id: "filtration", title: "Filtration", caption: "Separate a solid from a liquid", children: <SeparationLesson embedded filtrationOnly /> },
   { id: "heart", title: "The heart", caption: "Blood takes two routes: to the lungs and to the body", children: <HeartScene /> },
+  { id: "water", title: "Water cycle", caption: "Water moves between the sea, the air and the land", children: <WaterCycleScene /> },
   { id: "gradient", title: "Gradient on a graph", caption: "On a position–time graph, the gradient is the velocity", children: <GradientScene /> },
 ];
 
