@@ -9,7 +9,7 @@ import WaterCycleScene from "../components/lessons/WaterCycleScene";
 import HyperbolaScene from "../components/lessons/HyperbolaScene";
 import StoreButtons from "../components/StoreButtons";
 import { pageMeta } from "../lib/seo";
-import { FAQS, FEATURES, HERO, HOW_IT_WORKS, POSITIONING, TUTOR } from "../content";
+import { FAQS, FEATURES, HERO, HOW_IT_WORKS, TUTOR } from "../content";
 import { TAGLINE } from "../constants";
 
 export function meta(_: Route.MetaArgs) {
@@ -68,22 +68,6 @@ export default function Home() {
                 className="mx-auto max-h-[36rem] w-auto rounded-3xl"
               />
             </div>
-          </div>
-        </section>
-
-        {/* The idea: cramming to understanding */}
-        <section className="border-t border-[var(--border)] py-20">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <h2 className="max-w-2xl text-3xl font-bold sm:text-4xl">{POSITIONING.title}</h2>
-            <p className="mt-4 max-w-2xl text-lg text-[var(--text-muted)]">{POSITIONING.intro}</p>
-            <ul className="mt-12 grid gap-5 md:grid-cols-3">
-              {POSITIONING.points.map(p => (
-                <li key={p.title} className="rounded-3xl bg-[var(--surface)] p-7">
-                  <h3 className="text-xl font-bold">{p.title}</h3>
-                  <p className="mt-3 text-[var(--text-muted)]">{p.body}</p>
-                </li>
-              ))}
-            </ul>
           </div>
         </section>
 

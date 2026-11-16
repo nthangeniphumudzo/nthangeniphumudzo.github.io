@@ -11,29 +11,9 @@
 export const HERO = {
   eyebrow: "A study app for high-performing learners",
   headline: "QWILO is a study companion for your school subjects.",
-  sub: "Lessons are short animations with subtitles. Each one follows the CAPS curriculum, so it matches what is taught in class. A quiz and an AI tutor help you check and deepen your understanding.",
+  sub: "Short animated lessons, quizzes and an AI tutor, all following the CAPS curriculum.",
   primaryCta: "Get the app",
   secondaryCta: "See how it works",
-};
-
-/* How the app is built around learning, in three parts. */
-export const POSITIONING = {
-  title: "How the app is organised",
-  intro: "Lessons are grouped by term and topic, so you always know where you are in the syllabus.",
-  points: [
-    {
-      title: "Lessons you can watch",
-      body: "Each lesson is a short animation of one idea, with subtitles that follow the diagram step by step.",
-    },
-    {
-      title: "Quizzes you can check",
-      body: "Each topic has a short quiz. Every answer comes with the working, so you can see where a mistake happened.",
-    },
-    {
-      title: "Works without data",
-      body: "On the phone app, a term can be downloaded over Wi-Fi. Lessons, quizzes and progress then work without data.",
-    },
-  ],
 };
 
 /* The AI tutor, described as it works. */
@@ -62,7 +42,7 @@ export const HOW_IT_WORKS = [
   {
     step: "1",
     title: "Choose your grade and subjects",
-    body: "The roadmap for each term follows the CAPS teaching plan, so it shows the topics your class is covering.",
+    body: "Each term's roadmap lists the topics in the order your class covers them.",
   },
   {
     step: "2",
@@ -71,8 +51,8 @@ export const HOW_IT_WORKS = [
   },
   {
     step: "3",
-    title: "See your level on each topic",
-    body: "Your understanding is shown on the CAPS seven-level scale for each topic and chapter. Topics that need more work get a Revise button.",
+    title: "Check and revise",
+    body: "Quiz results show where you stand. Topics that need more work get a Revise button that opens the tutor.",
   },
 ];
 
@@ -115,7 +95,7 @@ export const FEATURES = [
   {
     icon: "progress",
     title: "Progress across devices",
-    body: "Sign in with Google or Apple, and your progress is the same on your phone, tablet and laptop.",
+    body: "Your progress is the same on your phone, tablet and laptop.",
   },
 ];
 
@@ -178,14 +158,6 @@ export const COMMUNITY_POINTS = [
     title: "Notices before tests",
     body: "Notices from the QWILO team can be pinned to the top of a community, and each one ends on a set date.",
   },
-  {
-    title: "Sign-in",
-    body: "Sign in with the Google or Apple account you already have.",
-  },
-  {
-    title: "Progress across devices",
-    body: "Your place in a lesson or quiz is kept on your phone, tablet and laptop.",
-  },
 ];
 
 export const FAQS = [
@@ -208,10 +180,6 @@ export const FAQS = [
   {
     q: "Who can learners talk to?",
     a: "Other learners in the same grade and subject, in the community. Posts there come from the QWILO team.",
-  },
-  {
-    q: "Who posts in the community?",
-    a: "The QWILO team posts discussions, tips and notices. Learners add questions, answers and comments under them.",
   },
   {
     q: "Does QWILO replace the teacher or the textbook?",
