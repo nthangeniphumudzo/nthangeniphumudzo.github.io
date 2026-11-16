@@ -39,7 +39,7 @@ export const POSITIONING = {
 /* The AI tutor, described as it works. */
 export const TUTOR = {
   title: "The AI tutor",
-  intro: "Open the tutor from inside a lesson and ask about the idea on screen. It answers with the same grade, subject and topic in mind.",
+  intro: "Ask a question about the lesson you are watching. The answer comes back as a short animation.",
   steps: [
     {
       title: "Ask about the lesson",

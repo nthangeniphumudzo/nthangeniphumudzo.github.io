@@ -56,18 +56,17 @@ export default function Home() {
         {/* Coverage and the AI tutor promise, highlighted */}
         <section className="border-t border-[var(--border)] bg-[var(--surface)] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <div className="mt-8 rounded-[2rem] bg-ink p-8 text-white sm:p-12">
-              <h2 className="text-3xl font-bold sm:text-4xl">{TUTOR.title}</h2>
-              <p className="mt-4 max-w-2xl text-lg text-white/75">{TUTOR.intro}</p>
-              <ol className="mt-10 grid gap-5 md:grid-cols-3">
-                {TUTOR.steps.map((step, i) => (
-                  <li key={step.title} className="rounded-2xl bg-white/10 p-6">
-                    <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white font-heading font-bold text-ink">{i + 1}</span>
-                    <h3 className="mt-5 text-xl font-bold">{step.title}</h3>
-                    <p className="mt-2 text-white/75">{step.body}</p>
-                  </li>
-                ))}
-              </ol>
+            <div className="mt-8 grid items-center gap-10 rounded-[2rem] bg-ink p-8 text-white sm:p-12 lg:grid-cols-2">
+              <div>
+                <h2 className="text-3xl font-bold sm:text-4xl">{TUTOR.title}</h2>
+                <p className="mt-4 max-w-md text-lg text-white/75">{TUTOR.intro}</p>
+              </div>
+              <img
+                src="/screens/tutor.png"
+                alt="The AI tutor answering a question about amplitude, with a short animation of a transverse wave"
+                loading="lazy"
+                className="mx-auto max-h-[36rem] w-auto rounded-3xl"
+              />
             </div>
           </div>
         </section>
