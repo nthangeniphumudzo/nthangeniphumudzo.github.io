@@ -181,8 +181,8 @@ type StepName = keyof typeof STEPS;
 
 const SWATCH_COLOURS: Record<Ink, string> = { amber: INK.amber.fill, coral: INK.coral.fill, slate: INK.slate.fill, yellow: INK.yellow.fill, blue: INK.blue.fill };
 
-export default function SeparationLesson({ embedded = false }: { embedded?: boolean }) {
-  const [step, setStep] = useState<StepName>("overview");
+export default function SeparationLesson({ embedded = false, filtrationOnly = false }: { embedded?: boolean; filtrationOnly?: boolean }) {
+  const [step, setStep] = useState<StepName>(filtrationOnly ? "filtration" : "overview");
   const current = STEPS[step];
 
   return (
@@ -204,8 +204,8 @@ export default function SeparationLesson({ embedded = false }: { embedded?: bool
 
       {!embedded && <h3 className="text-center text-base font-bold">{current.title}</h3>}
 
-      {/* Step switch */}
-      <div role="group" aria-label="Choose a step" className="mx-auto mt-4 inline-flex w-full justify-center gap-2">
+      {/* Step switch (hidden when the slide shows only filtration) */}
+      {!filtrationOnly && <div role="group" aria-label="Choose a step" className="mx-auto mt-4 inline-flex w-full justify-center gap-2">
         {(Object.keys(STEPS) as StepName[]).map(name => (
           <button
             key={name}
@@ -219,7 +219,7 @@ export default function SeparationLesson({ embedded = false }: { embedded?: bool
             {STEPS[name].tab}
           </button>
         ))}
-      </div>
+      </div>}
 
       {/* The drawing: the app's 300 × 200 design space, shown at 3:2 */}
       <figure className={embedded ? "flex min-h-0 flex-1 flex-col" : "mt-5"}>

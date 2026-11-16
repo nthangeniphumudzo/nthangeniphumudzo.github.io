@@ -22,7 +22,7 @@ export function meta(_: Route.MetaArgs) {
 
 /* The lesson previews in the carousel. Each one is a scene that already exists in the QWILO app. */
 const CONCEPT_SLIDES: ConceptSlide[] = [
-  { id: "mixtures", title: "Mixtures", caption: "Separate what is mixed together", children: <SeparationLesson embedded /> },
+  { id: "filtration", title: "Filtration", caption: "Separate a solid from a liquid", children: <SeparationLesson embedded filtrationOnly /> },
   { id: "heart", title: "The heart", caption: "Blood takes two routes: to the lungs and to the body", children: <HeartScene /> },
   { id: "gradient", title: "Gradient on a graph", caption: "On a position–time graph, the gradient is the velocity", children: <GradientScene /> },
 ];
