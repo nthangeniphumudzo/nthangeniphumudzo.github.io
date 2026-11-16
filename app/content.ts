@@ -9,7 +9,7 @@
    Mathematics, Physical Sciences and Life Sciences); confirm before launch. */
 
 export const HERO = {
-  eyebrow: "A study app for high performance learners",
+  eyebrow: "A study app for high-performing learners",
   headline: "QWILO is a study companion for your school subjects.",
   sub: "Lessons are short animations with subtitles. Each one follows the CAPS curriculum, so it matches what is taught in class. A quiz and an AI tutor help you check and deepen your understanding.",
   primaryCta: "Get the app",

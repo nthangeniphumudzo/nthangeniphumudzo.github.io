@@ -20,7 +20,7 @@ export default function Terms() {
 
       <section>
         <h2>Using Qwilo</h2>
-        <p>Qwilo is a study app for high performance learners. Use it to learn, and keep your sign-in to yourself.</p>
+        <p>Qwilo is a study app for high-performing learners. Use it to learn, and keep your sign-in to yourself.</p>
       </section>
 
       <section>
