@@ -73,16 +73,6 @@ export const FEATURES = [
     body: "Five multiple-choice questions with four options each, at easy, medium or advanced level. The options are shown in a different order each time, and every answer shows its working.",
   },
   {
-    icon: "tutor",
-    title: "AI tutor",
-    body: "A question from inside a lesson. The tutor knows the grade, subject and topic, and can replay the exact scene.",
-  },
-  {
-    icon: "gauge",
-    title: "Understanding levels",
-    body: "Your level on the CAPS seven-level scale for each topic and chapter. It changes as you practise.",
-  },
-  {
     icon: "exams",
     title: "Exam preparation",
     body: "The date of the next term test, past papers with memoranda, and quizzes built from the topics that need practice.",
