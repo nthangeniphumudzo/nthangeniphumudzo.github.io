@@ -6,7 +6,7 @@ import SeparationLesson from "../components/lessons/SeparationLesson";
 import ConceptCarousel, { type ConceptSlide } from "../components/lessons/ConceptCarousel";
 import HeartScene from "../components/lessons/HeartScene";
 import WaterCycleScene from "../components/lessons/WaterCycleScene";
-import GradientScene from "../components/lessons/GradientScene";
+import HyperbolaScene from "../components/lessons/HyperbolaScene";
 import StoreButtons from "../components/StoreButtons";
 import { pageMeta } from "../lib/seo";
 import { FAQS, FEATURES, HERO, HOW_IT_WORKS, POSITIONING, TUTOR } from "../content";
@@ -26,7 +26,7 @@ const CONCEPT_SLIDES: ConceptSlide[] = [
   { id: "filtration", title: "Filtration", caption: "Separate a solid from a liquid", children: <SeparationLesson embedded filtrationOnly /> },
   { id: "heart", title: "The heart", caption: "Blood takes two routes: to the lungs and to the body", children: <HeartScene /> },
   { id: "water", title: "Water cycle", caption: "Water moves between the sea, the air and the land", children: <WaterCycleScene /> },
-  { id: "gradient", title: "Gradient on a graph", caption: "On a position–time graph, the gradient is the velocity", children: <GradientScene /> },
+  { id: "hyperbola", title: "Hyperbolas", caption: "Shifting a hyperbola moves its asymptotes", children: <HyperbolaScene /> },
 ];
 
 export default function Home() {
