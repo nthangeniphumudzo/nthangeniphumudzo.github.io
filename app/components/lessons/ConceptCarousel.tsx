@@ -47,7 +47,8 @@ export default function ConceptCarousel({ slides }: { slides: ConceptSlide[] }) 
         ref={listRef}
         onScroll={handleScroll}
         aria-label="Lesson previews"
-        className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-[10%] pb-4 md:grid md:grid-cols-3 md:gap-5 md:overflow-visible md:px-0"
+        className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-[10%] pb-4 md:grid md:gap-5 md:overflow-visible md:px-0"
+        style={{ gridTemplateColumns: `repeat(${slides.length}, minmax(0, 1fr))` }}
       >
         {slides.map(s => (
           <li key={s.id} className="w-full flex-none snap-center md:w-auto">

@@ -67,7 +67,8 @@ function ItemView({ item }: { item: Item }) {
   }
   if (item.type === "text") {
     return (
-      <text x={Number(any.x)} y={Number(any.y)} fontSize={Number(any.size ?? 11)} fontWeight={600} fill="#0F172A" textAnchor="middle">
+      // The app places text by its top edge; SVG uses the baseline, so move it down by the text size.
+      <text x={Number(any.x)} y={Number(any.y) + Number(any.size ?? 11) * 0.85} fontSize={Number(any.size ?? 11)} fontWeight={600} fill="#0F172A" textAnchor="middle">
         {String(any.text)}
       </text>
     );
