@@ -1,80 +1,78 @@
-/* All marketing copy in one place. Pages and components read from here, so the
-   wording can be reviewed as a whole and changed without touching layout code.
+/* All site copy in one place. Pages and components read from here.
 
-   Voice: warm, confident and direct. Speak to the learner and to the parent or sibling
-   who wants them to succeed. Lead with the feeling of understanding and the sense of
-   progress, never with fear or with what a learner is missing.
+   Voice: plain and descriptive. Describe what the app contains and how a learner uses it,
+   and let the reader decide. No slogans, no urgency, no selling lines.
 
-   Accuracy rule: only claim what the app does or is being built to do. Voice narration is
-   not live yet, so the copy says "subtitles" and never promises a narrator. The AI tutor
+   Accuracy rule: only describe what the app does or is being built to do. Voice narration
+   is not live yet, so the copy says "subtitles" and never promises a narrator. The AI tutor
    needs a connection. Subjects and grades follow the curriculum drafts (Grades 10–12,
    Mathematics, Physical Sciences and Life Sciences); confirm before launch. */
 
 export const HERO = {
-  eyebrow: "A study companion for high school learners",
-  headline: "The subject that felt hard? Let it click.",
-  sub: "QWILO turns your school subjects into lessons you can see. Watch each idea unfold, ask a tutor to explain it again, and check what you know. Built for the learner who wants to understand, not just pass.",
+  eyebrow: "A study app for high school learners",
+  headline: "QWILO is a study companion for your school subjects.",
+  sub: "Lessons are short animations with subtitles. Each one follows the CAPS curriculum, so it matches what is taught in class. A quiz and an AI tutor help you check and deepen your understanding.",
   primaryCta: "Get the app",
   secondaryCta: "See how it works",
 };
 
-/* The idea behind the app, in three promises. */
+/* How the app is built around learning, in three parts. */
 export const POSITIONING = {
-  title: "Understanding, one step at a time",
-  intro: "Every lesson builds on the one before it, so each idea connects and stays with you, and every step forward feels earned.",
+  title: "How the app is organised",
+  intro: "Lessons are grouped by term and topic, so you always know where you are in the syllabus.",
   points: [
     {
-      title: "See it happen",
-      body: "Animated experiments and diagrams show you what happens and why, right on the phone you already carry.",
+      title: "Lessons you can watch",
+      body: "Each lesson is a short animation of one idea, with subtitles that follow the diagram step by step.",
     },
     {
-      title: "Confidence that grows",
-      body: "Quizzes show your working and your progress, so you always know what you have mastered and what is next.",
+      title: "Quizzes you can check",
+      body: "Each topic has a short quiz. Every answer comes with the working, so you can see where a mistake happened.",
     },
     {
-      title: "Study anywhere",
-      body: "Download a term over Wi-Fi and study at home, on the bus or anywhere else, with lessons that work without data.",
+      title: "Works without data",
+      body: "On the phone app, a term can be downloaded over Wi-Fi. Lessons, quizzes and progress then work without data.",
     },
   ],
 };
 
-/* The AI tutor promise, in three steps. Highlighted on the home page. */
+/* The AI tutor, described as it works. */
 export const TUTOR = {
-  title: "Stuck? Ask again, as often as you need.",
-  intro: "Your AI tutor explains an idea again, in a new way, for as long as it takes. There is no judgement and no rush, only the next step to understanding.",
+  title: "The AI tutor",
+  intro: "Open the tutor from inside a lesson and ask about the idea on screen. It answers with the same grade, subject and topic in mind.",
   steps: [
     {
-      title: "Ask anything",
-      body: "Ask about any idea in the lesson you are on. The tutor knows your grade, subject and topic, and explains it step by step.",
+      title: "Ask about the lesson",
+      body: "The tutor knows which lesson, topic and grade you are on, so its explanation fits what you are watching.",
     },
     {
-      title: "Hear it another way",
-      body: "Ask from a different angle, as many times as you need, until the idea clicks and you can explain it in your own words.",
+      title: "Ask again in another way",
+      body: "You can ask the same question as many times as you like, and the tutor will explain it from a different angle.",
     },
     {
-      title: "Prove it to yourself",
-      body: "When you feel ready, take a quiz in the app and see how far you have come.",
+      title: "Check with a quiz",
+      body: "When you are ready, the quiz for that topic shows what you understand and what still needs work.",
     },
   ],
 };
 
-export const STORE_NOTE = "Coming soon to the App Store and Google Play. Free to download.";
+export const STORE_NOTE = "Coming soon to the App Store and Google Play.";
 
 export const HOW_IT_WORKS = [
   {
     step: "1",
-    title: "Choose the grade and subjects",
-    body: "Pick your grade and your subjects. The roadmap follows the CAPS teaching plan for each term, so you always know exactly what your class is covering.",
+    title: "Choose your grade and subjects",
+    body: "The roadmap for each term follows the CAPS teaching plan, so it shows the topics your class is covering.",
   },
   {
     step: "2",
-    title: "Watch the idea come alive",
-    body: "Each topic opens with short animated lessons and subtitles on by default. Then a quiz with instant feedback and worked answers.",
+    title: "Watch a lesson, then the quiz",
+    body: "Each topic has short animated lessons with subtitles. A quiz follows, with instant feedback and worked answers.",
   },
   {
     step: "3",
-    title: "See the progress you are making",
-    body: "Track your understanding on the CAPS seven-level scale for every topic and chapter. Anything that needs more attention gets a Revise button that opens the AI tutor on that topic.",
+    title: "See your level on each topic",
+    body: "Your understanding is shown on the CAPS seven-level scale for each topic and chapter. Topics that need more work get a Revise button.",
   },
 ];
 
@@ -82,42 +80,42 @@ export const FEATURES = [
   {
     icon: "roadmap",
     title: "Term roadmap",
-    body: "Every chapter in the order your teacher covers it. Mark topics done, in progress or for later, and watch the term come together.",
+    body: "The chapters of a term in the order they are taught. Each topic can be marked done, in progress or for later.",
   },
   {
     icon: "lesson",
     title: "Animated lessons",
-    body: "Clear, interactive diagrams that show how things work. Play, pause, replay, slow down or speed up, and follow the subtitles as you go.",
+    body: "Diagrams that show how something works. You can play, pause, replay, change the speed, and follow the subtitles.",
   },
   {
     icon: "quiz",
     title: "Topic quizzes",
-    body: "Five multiple-choice questions at three levels, in a fresh order every time, with the working shown for every answer.",
+    body: "Five multiple-choice questions with four options each, at easy, medium or advanced level. The options are shown in a different order each time, and every answer shows its working.",
   },
   {
     icon: "tutor",
     title: "AI tutor",
-    body: "Ask a question from inside the lesson you are on. The tutor knows your grade, subject and topic, and can replay the exact scene you need.",
+    body: "A question from inside a lesson. The tutor knows the grade, subject and topic, and can replay the exact scene.",
   },
   {
     icon: "gauge",
     title: "Understanding levels",
-    body: "See your level on the CAPS seven-level scale for each topic and chapter. Watch it grow as you practise.",
+    body: "Your level on the CAPS seven-level scale for each topic and chapter. It changes as you practise.",
   },
   {
     icon: "exams",
-    title: "Exam prep",
-    body: "A countdown to the next term test, past papers with memoranda, and mixed quizzes built from the topics that need the most practice.",
+    title: "Exam preparation",
+    body: "The date of the next term test, past papers with memoranda, and quizzes built from the topics that need practice.",
   },
   {
     icon: "community",
-    title: "Learn together",
-    body: "A community for each grade and subject. Share questions, swap tips and learn alongside classmates on the same journey, with posts from the QWILO team.",
+    title: "Subject community",
+    body: "A community for each grade and subject. Learners ask questions and answer each other, and the QWILO team posts discussions and notices.",
   },
   {
     icon: "progress",
-    title: "Progress that follows you",
-    body: "Sign in with Google or Apple, and the progress goes with you from phone to tablet to laptop.",
+    title: "Progress across devices",
+    body: "Sign in with Google or Apple, and your progress is the same on your phone, tablet and laptop.",
   },
 ];
 
@@ -125,32 +123,32 @@ export const SCREENS = [
   {
     id: "roadmap",
     label: "Term roadmap",
-    caption: "Every chapter in teaching order, with the status of each topic.",
+    caption: "The chapters of a term in teaching order, with the status of each topic.",
     src: "/screens/roadmap.png" as string | undefined,
   },
   {
     id: "lesson",
     label: "Lesson player",
-    caption: "An animated lesson with subtitles. Pause, replay or ask the tutor.",
+    caption: "A lesson with subtitles. Pause, replay or ask the tutor.",
     src: "/screens/lesson.png",
   },
   {
     id: "quiz",
     label: "Topic quiz",
-    caption: "Five questions at three levels, an instant score and the next level to aim for.",
+    caption: "Five questions at three levels, with an instant score.",
     src: "/screens/quiz.png",
   },
   {
     id: "exams",
     label: "Exams",
-    caption: "A term test countdown, past papers and quizzes built from the topics that need the most practice.",
+    caption: "The term test date, past papers, and quizzes for the topics that need practice.",
     src: "/screens/exams.png",
   },
 ];
 
 export const CURRICULUM = {
   intro:
-    "QWILO follows the Department of Basic Education's CAPS curriculum and the annual teaching plan for each grade. What your child studies here matches what they are learning in class this term.",
+    "QWILO follows the Department of Basic Education's CAPS curriculum and the annual teaching plan for each grade. Content is loaded by the QWILO team, and each topic appears in the term it is taught.",
   grades: [
     { grade: "Grade 10", subjects: ["Mathematics", "Physical Sciences", "Life Sciences"] },
     { grade: "Grade 11", subjects: ["Mathematics", "Physical Sciences", "Life Sciences"] },
@@ -158,42 +156,42 @@ export const CURRICULUM = {
   ],
   example: {
     title: "Example: Grade 10 Physical Sciences, Waves",
-    body: "A transverse wave is one where the particles move at right angles to the direction the wave travels. Watch one particle in the lesson move only up and down, then answer a quiz on the difference between transverse and longitudinal waves.",
+    body: "A transverse wave is one where the particles move at right angles to the direction the wave travels. The lesson shows a single particle moving only up and down as the wave passes.",
   },
 };
 
-/* What learners get from the community. Written as benefits. */
+/* What the community is, in plain terms. */
 export const COMMUNITY_POINTS = [
   {
-    title: "A community for your subject",
-    body: "Each grade and subject has its own community, so you learn alongside the classmates taking the same subjects.",
+    title: "One community per subject",
+    body: "Each grade and subject has its own community, for the learners taking those subjects.",
   },
   {
-    title: "Ask, answer and grow together",
-    body: "Post a question, help someone with theirs, and see how others work through the same problem.",
+    title: "Questions and answers",
+    body: "Learners post a question, and others answer it. Everything is visible to the community.",
   },
   {
-    title: "Posts you can trust",
-    body: "Discussions, tips and notices come from the QWILO team, so the information is always clear about where it comes from.",
+    title: "Posts from the QWILO team",
+    body: "Discussions, tips and notices are posted by the QWILO team, and the post shows who wrote it.",
   },
   {
-    title: "Ready for every test",
-    body: "Pinned notices and past-paper discussions keep the whole class prepared in the lead-up to term tests.",
+    title: "Notices before tests",
+    body: "Notices from the QWILO team can be pinned to the top of a community, and each one ends on a set date.",
   },
   {
-    title: "Simple sign-in",
-    body: "Use the Google or Apple account you already have. There is nothing extra to set up.",
+    title: "Sign-in",
+    body: "Sign in with the Google or Apple account you already have.",
   },
   {
-    title: "Progress everywhere",
-    body: "Pick up exactly where you left off on your phone, tablet or laptop.",
+    title: "Progress across devices",
+    body: "Your place in a lesson or quiz is kept on your phone, tablet and laptop.",
   },
 ];
 
 export const FAQS = [
   {
     q: "Is QWILO free?",
-    a: "Downloading the app and learning the core content are free. Some extras may need a subscription later. Pricing will be published before launch.",
+    a: "Downloading the app is free, and so is reading and taking part in the community. The second and third challenge levels, and attaching files to community posts, will need a subscription. Pricing will be published before launch.",
   },
   {
     q: "Which grades and subjects does it cover?",
@@ -201,15 +199,15 @@ export const FAQS = [
   },
   {
     q: "Can I study without data?",
-    a: "Yes. Download a term over Wi-Fi and your lessons, quizzes and progress work on the phone without data. The AI tutor and posting to the community need a connection.",
+    a: "On the phone app, a term can be downloaded over Wi-Fi, and its lessons, quizzes and progress then work without data. The AI tutor, new downloads and community posts need a connection. The web version needs a connection for now.",
   },
   {
     q: "How do I sign in?",
-    a: "With the Google or Apple account you already use. There is no new password to create and no phone number to share.",
+    a: "With the Google or Apple account you already use. There is no password to create and no phone number to share.",
   },
   {
-    q: "Who can my child learn with?",
-    a: "Other learners in the same grade and subject. Everyone in the community is working through the same topics, so questions are answered by people on the same journey.",
+    q: "Who can learners talk to?",
+    a: "Other learners in the same grade and subject, in the community. Posts there come from the QWILO team.",
   },
   {
     q: "Who posts in the community?",
@@ -217,15 +215,15 @@ export const FAQS = [
   },
   {
     q: "Does QWILO replace the teacher or the textbook?",
-    a: "No. QWILO is a study companion. It follows the same syllabus as the class, so it works alongside the teacher and the textbook.",
+    a: "No. QWILO follows the same syllabus as the class, so it is used alongside the teacher and the textbook.",
   },
   {
     q: "What information does QWILO use?",
-    a: "Only what the app needs to run lessons, quizzes and the community. Read the privacy policy for the full details.",
+    a: "Only what the app needs to run lessons, quizzes and the community. The privacy policy has the full details.",
   },
   {
     q: "Which devices will it work on?",
-    a: "iPhone and Android phones first, with a web version that works on phone, tablet and laptop.",
+    a: "iPhone and Android phones first, with a web version for phone, tablet and laptop.",
   },
 ];
 

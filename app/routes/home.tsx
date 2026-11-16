@@ -157,7 +157,7 @@ export default function Home() {
         {/* Final call to action */}
         <section id="get-the-app" className="scroll-mt-24 px-4 pb-24 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl rounded-[2rem] bg-ink px-8 py-16 text-center text-white sm:px-16">
-            <h2 className="text-3xl font-bold sm:text-4xl">Give this term a head start</h2>
+            <h2 className="text-3xl font-bold sm:text-4xl">Get QWILO</h2>
             <p className="mx-auto mt-4 max-w-xl text-white/75">{TAGLINE}</p>
             <div className="mt-8 flex justify-center">
               <StoreButtons />
