@@ -80,13 +80,12 @@ export default function WaterCycleScene() {
   const legend = WATER_CYCLE.legend;
   return (
     <div className="flex h-full min-h-0 flex-col">
-      <p className="text-center text-base font-bold">{WATER_CYCLE.title}</p>
       <svg
         viewBox="0 0 300 200"
         role="img"
         aria-label="The water cycle: water evaporates from the sea, condenses into cloud, falls as rain on the mountain and runs back to the sea."
         preserveAspectRatio="xMidYMid meet"
-        className="mt-2 min-h-0 w-full flex-1 overflow-hidden rounded-2xl border-[1.5px] border-[#CBD5E1] bg-white"
+        className="min-h-0 w-full flex-1 overflow-hidden rounded-2xl border-[1.5px] border-[#CBD5E1] bg-white"
       >
         <text x={10} y={14} fontSize={9} fontWeight={600} fill="#475569">{WATER_CYCLE.label}</text>
         {WATER_CYCLE.items.map((item, i) => (
