@@ -91,7 +91,7 @@ export default function Home() {
         {/* How it works */}
         <section id="how-it-works" className="border-t border-[var(--border)] bg-[var(--surface)] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <h2 className="max-w-2xl text-3xl font-bold sm:text-4xl">How Qwilo works</h2>
+            <h2 className="max-w-2xl text-3xl font-bold sm:text-4xl">How learning with QWILO works</h2>
             <ol className="mt-12 grid gap-6 md:grid-cols-3">
               {HOW_IT_WORKS.map(s => (
                 <li key={s.step} className="rounded-3xl border border-[var(--border)] bg-[var(--bg)] p-7">
@@ -118,7 +118,7 @@ export default function Home() {
         {/* Features */}
         <section className="border-t border-[var(--border)] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-            <h2 className="max-w-2xl text-3xl font-bold sm:text-4xl">Everything you need for the term</h2>
+            <h2 className="max-w-2xl text-3xl font-bold sm:text-4xl">Everything your term needs, in one place</h2>
             <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {FEATURES.map(f => (
                 <li key={f.title} className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6">
@@ -136,7 +136,7 @@ export default function Home() {
         {/* FAQ preview */}
         <section className="py-20">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold sm:text-4xl">Questions parents and learners ask</h2>
+            <h2 className="text-3xl font-bold sm:text-4xl">Questions parents and learners ask, answered</h2>
             <div className="mt-10 divide-y divide-[var(--border)] border-y border-[var(--border)]">
               {FAQS.slice(0, 4).map(f => (
                 <details key={f.q} className="group py-5">
@@ -157,7 +157,7 @@ export default function Home() {
         {/* Final call to action */}
         <section id="get-the-app" className="scroll-mt-24 px-4 pb-24 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-6xl rounded-[2rem] bg-ink px-8 py-16 text-center text-white sm:px-16">
-            <h2 className="text-3xl font-bold sm:text-4xl">Start your term with Qwilo</h2>
+            <h2 className="text-3xl font-bold sm:text-4xl">Give this term a head start</h2>
             <p className="mx-auto mt-4 max-w-xl text-white/75">{TAGLINE}</p>
             <div className="mt-8 flex justify-center">
               <StoreButtons />
