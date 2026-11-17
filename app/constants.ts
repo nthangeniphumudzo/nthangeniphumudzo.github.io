@@ -4,7 +4,7 @@
    confirmed (see the handover notes). Store links stay empty until the apps
    are live in the stores; while empty, the site shows "Coming soon". */
 export const SITE_URL = "https://qwilo.co.za";
-export const SUPPORT_EMAIL = "hello@qwilo.co.za";
+export const SUPPORT_EMAIL = "learn@qwilo.co.za";
 export const APP_NAME = "Qwilo";
 export const TAGLINE = "Getting smarter by day.";
 export const LAST_UPDATED = "14 November 2026";
