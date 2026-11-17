@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
 
         <nav aria-label="Site">
-          <h2 className="text-sm font-semibold uppercase tracking-widest text-[var(--text-muted)]">Explore</h2>
+          <h2 className="text-sm font-semibold text-[var(--text-muted)]">Explore</h2>
           <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-1">
             {FOOTER_LINKS.map(l => (
               <li key={l.href}>
@@ -29,7 +29,7 @@ export default function Footer() {
         </nav>
 
         <nav aria-label="Legal">
-          <h2 className="text-sm font-semibold uppercase tracking-widest text-[var(--text-muted)]">Legal</h2>
+          <h2 className="text-sm font-semibold text-[var(--text-muted)]">Legal</h2>
           <ul className="mt-4 grid gap-y-1">
             {LEGAL_LINKS.map(l => (
               <li key={l.href}>

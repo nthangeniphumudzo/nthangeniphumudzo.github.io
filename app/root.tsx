@@ -99,7 +99,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 
   return (
     <main className="mx-auto max-w-2xl px-5 pt-32 pb-20">
-      <p className="text-sm font-semibold uppercase tracking-widest text-teal">{isRouteErrorResponse(error) ? String(error.status) : "Error"}</p>
+      <p className="text-sm font-semibold text-teal">{isRouteErrorResponse(error) ? String(error.status) : "Error"}</p>
       <h1 className="mt-3 text-4xl font-bold">{message}</h1>
       <p className="mt-4 text-lg text-[var(--text-muted)]">{details}</p>
       <a href="/" className="mt-8 inline-flex min-h-11 items-center rounded-full bg-ink px-6 font-semibold text-white">
