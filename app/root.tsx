@@ -12,8 +12,9 @@ import { APP_NAME, SITE_URL, TAGLINE } from "./constants";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
-  { rel: "icon", href: "/favicon.png", type: "image/png" },
-  { rel: "apple-touch-icon", href: "/favicon.png" },
+  { rel: "icon", href: "/favicon.png", type: "image/png", media: "(prefers-color-scheme: light)" },
+  { rel: "icon", href: "/favicon-dark.png", type: "image/png", media: "(prefers-color-scheme: dark)" },
+  { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
   {
@@ -32,7 +33,7 @@ const jsonLd = {
       "@id": `${SITE_URL}/#org`,
       name: APP_NAME,
       url: SITE_URL,
-      logo: `${SITE_URL}/favicon.png`,
+      logo: `${SITE_URL}/logo.png`,
     },
     {
       "@type": "WebSite",
