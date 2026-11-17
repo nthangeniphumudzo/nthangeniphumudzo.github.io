@@ -45,6 +45,16 @@ export default function Home() {
               <p className="mt-6 max-w-xl text-lg text-[var(--text-muted)]">{HERO.sub}</p>
             </div>
 
+            {/* One live lesson beside the headline, so the desktop hero is not half empty. */}
+            <figure className="mx-auto w-full max-w-md">
+              <div className="flex h-[26rem] flex-col rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-4 sm:p-5">
+                <DistillationScene />
+              </div>
+              <figcaption className="mt-4 text-center text-sm text-[var(--text-muted)]">
+                Distillation: heat a mixture, cool the vapour, and collect the clear liquid
+              </figcaption>
+            </figure>
+
           </div>
 
           <div className="mx-auto mt-4 max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -75,14 +85,21 @@ export default function Home() {
         <section id="how-it-works" className="border-t border-[var(--border)] bg-[var(--surface)] py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <h2 className="max-w-2xl text-3xl font-bold sm:text-4xl">How learning with QWILO works</h2>
-            <ol className="mt-12 grid gap-6 md:grid-cols-3">
-              {HOW_IT_WORKS.map(s => (
-                <li key={s.step} className="rounded-3xl border border-[var(--border)] bg-[var(--bg)] p-7">
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-ink font-heading font-bold text-white">{s.step}</span>
-                  <h3 className="mt-5 text-xl font-bold">{s.title}</h3>
-                  <p className="mt-3 text-[var(--text-muted)]">{s.body}</p>
-                </li>
-              ))}
+            {/* The syllabus spine: steps run down one line, the way a term roadmap does in the app. */}
+            <ol className="mt-12 max-w-3xl">
+              {HOW_IT_WORKS.map((s, i) => {
+                const last = i === HOW_IT_WORKS.length - 1;
+                return (
+                  <li key={s.step} className="relative flex gap-6 pb-12 last:pb-0">
+                    {last ? null : <span aria-hidden="true" className="absolute left-5 top-10 bottom-0 w-0.5 bg-[var(--accent)]" />}
+                    <span className="relative flex h-10 w-10 flex-none items-center justify-center rounded-full bg-ink font-heading font-bold text-white">{s.step}</span>
+                    <div className="pt-1">
+                      <h3 className="text-xl font-bold">{s.title}</h3>
+                      <p className="mt-2 text-[var(--text-muted)]">{s.body}</p>
+                    </div>
+                  </li>
+                );
+              })}
             </ol>
           </div>
         </section>
