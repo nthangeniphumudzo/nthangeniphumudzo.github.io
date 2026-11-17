@@ -2,7 +2,7 @@ import type { Route } from "./+types/home";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScreenGallery from "../components/ScreenGallery";
-import SeparationLesson from "../components/lessons/SeparationLesson";
+import DistillationScene from "../components/lessons/DistillationScene";
 import ConceptCarousel, { type ConceptSlide } from "../components/lessons/ConceptCarousel";
 import HeartScene from "../components/lessons/HeartScene";
 import WaterCycleScene from "../components/lessons/WaterCycleScene";
@@ -23,7 +23,7 @@ export function meta(_: Route.MetaArgs) {
 
 /* The lesson previews in the carousel. Each one is a scene that already exists in the QWILO app. */
 const CONCEPT_SLIDES: ConceptSlide[] = [
-  { id: "filtration", title: "Filtration", caption: "Separate a solid from a liquid", children: <SeparationLesson embedded filtrationOnly /> },
+  { id: "distillation", title: "Distillation", caption: "Heat a mixture, cool the vapour, and collect the clear liquid", children: <DistillationScene /> },
   { id: "heart", title: "The heart", caption: "Blood takes two routes: to the lungs and to the body", children: <HeartScene /> },
   { id: "water", title: "Water cycle", caption: "Water moves between the sea, the air and the land", children: <WaterCycleScene /> },
   { id: "hyperbola", title: "Hyperbolas", caption: "Shifting a hyperbola moves its asymptotes", children: <HyperbolaScene /> },
